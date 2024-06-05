@@ -26,7 +26,7 @@
           >;
         };layer3 {
           bindings = <
-          &kp GRAVE &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &kp CARET &kp PAGE_UP &kp UP &kp PAGE_DOWN &kp NON_US_HASH &kp RIGHT_BRACKET &none &none &kp RA(N2) &none &none &none &none &kp LEFT &kp DOWN &kp RIGHT &kp MINUS &kp DELETE &trans &none &none &none &none &none &kp HOME &kp END &none &none &bt BT_CLR_ALL &trans &trans &kp SPACE &trans &trans &kp SPACE &trans
+          &kp GRAVE &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &kp CARET &kp PAGE_UP &kp UP &kp PAGE_DOWN &kp NON_US_HASH &kp RIGHT_BRACKET &none &none &kp RA(N2) &none &none &none &none &kp LEFT &kp DOWN &kp RIGHT &kp MINUS &kp DELETE &trans &none &none &none &none &none &kp HOME &kp END &bt BT_PRV &bt BT_NXT &bt BT_CLR &trans &trans &kp SPACE &trans &trans &kp SPACE &trans
           >;
         };
     };
