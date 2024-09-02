@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 &soft_off {
-    hold-time-ms = <3000>; // Only turn off it the key is held for 3 seconds or longer.
+    hold-time-ms = <5000>; // Only turn off if the key is held for 5 seconds or longer.
 };
 
 / {
@@ -20,21 +20,40 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
-                <&macro_wait_time 20>,
                 <&macro_tap>,
-                <&kp W>,
-                <&macro_wait_time 20>,
-                <&kp S>,
-                <&macro_wait_time 20>,
-                <&kp D>,
-                <&macro_wait_time 20>,
-                <&kp A>,
-                <&macro_wait_time 20>,
-                <&kp W>,
+                <&kp W &kp S &kp D &kp A &kp W>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
             label = "REINFORCE";
+        };
+
+        shield_generator_pack: shield_generator_pack {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp S &kp W &kp A &kp D &kp A &kp D>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "SHIELD_GENERATOR_PACK";
+        };
+
+        orbital_laser: Orbital_Laser {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp D &kp S &kp W &kp D &kp S>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "ORBITAL_LASER";
         };
     };
 
@@ -88,10 +107,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &reinforce  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &reinforce              &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &shield_generator_pack  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &orbital_laser          &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans                  &trans  &trans
             >;
         };
     };
