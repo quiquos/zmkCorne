@@ -61,7 +61,7 @@
         compatible = "zmk,keymap";
 
         layer0 {
-            display-name = "Zero"
+            display-name = "Zero";
             bindings = <
 &kp ESCAPE      &kp Q  &kp W  &kp E         &kp R        &kp T               &kp Y              &kp U        &kp I          &kp O    &kp P          &kp BACKSPACE
 &lt 3 TAB       &kp A  &kp S  &kp D         &kp F        &kp G               &kp H              &kp J        &kp K          &kp L    &kp SEMICOLON  &kp ENTER
@@ -71,7 +71,7 @@
         };
 
         layer1 {
-            display-name = "One"
+            display-name = "One";
             bindings = <
 &trans  &kp N1  &kp N2  &kp N3  &kp N4     &kp N5    &kp N6           &kp N7  &kp N8         &kp N9  &kp N0        &trans
 &trans  &none   &none   &none   &none      &none     &kp KP_ASTERISK  &kp N4  &kp N5         &kp N6  &kp KP_PLUS   &trans
@@ -81,7 +81,7 @@
         };
 
         layer2 {
-            display-name = "Two"
+            display-name = "Two";
             bindings = <
 &kp F1  &kp F2                &kp F3                    &kp F4      &kp F5    &kp F6    &kp F7            &kp F8      &kp F9        &kp F10           &kp F11           &kp F12
 &none   &none                 &none                     &kp INSERT  &kp HOME  &none     &kp LS(NUMBER_0)  &kp LS(N8)  &kp LS(N9)    &kp LEFT_BRACKET  &kp SINGLE_QUOTE  &trans
@@ -91,7 +91,7 @@
         };
 
         layer3 {
-            display-name = "Three"
+            display-name = "Three";
             bindings = <
 &kp GRAVE  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET  &kp PAGE_UP  &kp UP        &kp PAGE_DOWN  &kp NON_US_HASH  &kp RIGHT_BRACKET
 &none      &none         &kp RA(N2)    &none         &none         &none           &none      &kp LEFT     &kp DOWN      &kp RIGHT      &kp MINUS        &kp DELETE
@@ -101,7 +101,7 @@
         };
 
         layer4 {
-            display-name = "Four"
+            display-name = "Four";
             bindings = <
 &kp ESCAPE      &kp Q  &kp W  &kp E      &kp R         &kp T               &trans  &trans  &trans        &trans  &kp NUMBER_1  &trans
 &kp TAB         &kp A  &kp S  &kp D      &kp F         &kp G               &trans  &trans  &trans        &trans  &kp NUMBER_2  &trans
@@ -111,7 +111,7 @@
         };
 
         layer5 {
-            display-name = "Five"
+            display-name = "Five";
             bindings = <
 &trans     &trans  &trans  &trans  &trans  &trans    &reinforce              &trans  &trans  &trans  &trans  &trans
 &trans     &trans  &trans  &trans  &trans  &trans    &shield_generator_pack  &trans  &trans  &trans  &trans  &trans
