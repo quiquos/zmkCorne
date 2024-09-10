@@ -12,6 +12,10 @@
     hold-time-ms = <3000>; // Only turn off it the key is held for 3 seconds or longer.
 };
 
+&lt {
+    tapping-term-ms = <100>;
+};
+
 / {
     macros {
         reinforce: reinforce {
