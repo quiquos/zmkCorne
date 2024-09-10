@@ -101,7 +101,7 @@
         };
 
         layer4 {
-            display-name = "Four";
+            display-name = "GameMode";
             bindings = <
 &kp ESCAPE      &kp Q  &kp W  &kp E      &kp R         &kp T               &trans  &trans  &trans        &trans  &kp NUMBER_1  &trans
 &kp TAB         &kp A  &kp S  &kp D      &kp F         &kp G               &trans  &trans  &trans        &trans  &kp NUMBER_2  &trans
@@ -111,7 +111,7 @@
         };
 
         layer5 {
-            display-name = "Five";
+            display-name = "GameModeXL";
             bindings = <
 &trans     &trans  &trans  &trans  &trans  &trans    &reinforce              &trans  &trans  &trans  &trans  &trans
 &trans     &trans  &trans  &trans  &trans  &trans    &shield_generator_pack  &trans  &trans  &trans  &trans  &trans
