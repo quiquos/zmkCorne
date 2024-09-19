@@ -115,7 +115,7 @@
         };
 
         layer5 {
-            display-name = "GameModeXL";
+            display-name = "GameModeX";
             bindings = <
 &trans     &trans  &trans  &trans  &trans  &trans    &reinforce              &trans  &trans  &trans  &trans  &trans
 &trans     &trans  &trans  &trans  &trans  &trans    &shield_generator_pack  &trans  &trans  &trans  &trans  &trans
