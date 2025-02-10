@@ -120,7 +120,7 @@
 &trans     &trans  &trans  &trans  &trans  &trans    &reinforce              &trans  &trans  &trans  &trans  &trans
 &trans     &trans  &trans  &trans  &trans  &trans    &shield_generator_pack  &trans  &trans  &trans  &trans  &trans
 &soft_off  &trans  &trans  &trans  &trans  &trans    &orbital_laser          &trans  &trans  &trans  &trans  &soft_off
-                           &trans  &trans  &trans    &trans                  &trans  &trans
+                           &trans  &trans  &trans    &trans                  &trans  &studio_unlock
             >;
         };  
     };
